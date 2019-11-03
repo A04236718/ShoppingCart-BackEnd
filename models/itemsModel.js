@@ -42,4 +42,4 @@ const itemService = {
   }
 };
 
-module.exports = itemService
+module.exports = itemService;

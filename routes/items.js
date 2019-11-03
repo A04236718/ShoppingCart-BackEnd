@@ -2,7 +2,7 @@ const express = require('express');
 const itemsController = require('../controller/itemsController');
 var router = express.Router();
 
-// Routes for th Various endpoints 
+// Routes for the Various endpoints 
 
 // Display All the items
 router.get('/', itemsController.index);
@@ -19,4 +19,4 @@ router.put("/:id", itemsController.update);
 // Delete an existing item
 router.delete("/:id", itemsController.delete);
 
-module.exports = roouter;
+module.exports = router;
