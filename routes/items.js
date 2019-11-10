@@ -8,7 +8,7 @@ var router = express.Router();
 router.get('/', itemsController.index);
 
 // Get a single Item
-router.get('/:id', itemsController.getItem);
+router.get('/:id', itemsController.show);
 
 // Create a New Item
 router.post("/", itemsController.create);

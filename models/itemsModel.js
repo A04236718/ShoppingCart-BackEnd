@@ -6,8 +6,8 @@ const items = [
   { id: 4, item: "Donuts", quantity: 12, price: 7 },
   { id: 5, item: "Cereal", quantity: 1, price: 1 }
 ];
-// increment ID
-let nextID = items.length + 1;
+// // increment ID
+// let nextID = items.length + 1;
 
 const itemService = {
   // Get all items / information
@@ -16,7 +16,7 @@ const itemService = {
   },
   findById: function(id) {
     return items.find(item => {
-      item.id === id;
+      item.id == id;
     });
   },
   save: function(item) {

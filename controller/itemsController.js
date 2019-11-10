@@ -20,7 +20,7 @@ exports.show = (req, res, next) => {
     err.status = 404;
     return next(err);
   }
-  res.status(201).json({ items: found });
+  res.status(201).json({ item: found });
   // res.json(found); alternative way
 };
 // Update an existing Item
