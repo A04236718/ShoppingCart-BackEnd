@@ -2,7 +2,7 @@ const itemService = require("../models/itemsModel");
 
 // Display All Items
 exports.index = (req, res, next) => {
-  const items = itemService.getItems();
+  const items = itemService.getItems(req.query);
   res.status(200).json({ items: items });
 };
 // Create A New Item

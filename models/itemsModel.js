@@ -11,8 +11,14 @@ let nextID = items.length + 1;
 
 const itemService = {
   // Get all items / information
-  getItems: function() {
-    return items;
+  getItems: function(query) {
+    if (query.item){
+        return items.filter((item) => 
+            item.item === query.item
+        );
+    }else{
+        return items;
+    }  
   },
   findById: function(id) {
     return items.find(item => {
