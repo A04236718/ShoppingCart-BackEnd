@@ -49,3 +49,30 @@ const itemService = {
 };
 
 module.exports = itemService;
+
+
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+
+// Create A Schema
+
+const itemSchema = new Schema({
+    id: {
+      type: Integer,
+      required: true
+    },
+    item: {
+      type: String,
+      required: true
+    },
+    quantity: {
+      type: Integer,
+      required: true
+    },
+    price: {
+      type: Double,
+      required: true
+    },
+});
+
+module.exports = itemsModel = mongoose.model('items', UserSchema);
